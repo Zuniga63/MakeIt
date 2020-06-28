@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: 16px;
+}
+/* Estilos de tarjeta */
+.card {
+	--color:#444;
+	width: 90%;
+	max-width: 25em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+	padding: 3.2em 1.25em 1.25em;
+	border: 3px solid var(--color);
+	border-radius: 20px;
+	box-shadow: 10px 30px 30px -15px rgba(46,45,46,1);
+}
+
+.card__avatar {
+  width: 6.25em;
+  position: absolute;
+  top: -3.125em;
+  left: calc(50% - 3.125em);
+  margin: 0;
+}
+
+.card__img {
+  border-radius: 50%;
+  width: 100%;
+  border: 5px solid #fff;
+}
+
+.card__title {
+  font-size: 1.5em;
+  text-align: center;
+  color: var(--color);
+}
+
+.card__info{
+	display: block;
+	font-size: 1em;
+	color: var(--color);
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 1em;
+	transition: all 0.5s;
+}
+
+.card__info:hover{
+	color: #000;
+}
+
+@media(min-width:1024px){
+	body{
+		font-size: 20px;
+	}
+}
+
+@media(min-width:1440px){
+	body{
+		font-size: 25px;
+	}
+}
